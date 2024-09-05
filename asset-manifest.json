@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React_Project_Virtual_Currency/static/css/main.33c78ec8.css",
+    "main.js": "/React_Project_Virtual_Currency/static/js/main.6d66986c.js",
+    "static/js/453.67827436.chunk.js": "/React_Project_Virtual_Currency/static/js/453.67827436.chunk.js",
+    "index.html": "/React_Project_Virtual_Currency/index.html",
+    "main.33c78ec8.css.map": "/React_Project_Virtual_Currency/static/css/main.33c78ec8.css.map",
+    "main.6d66986c.js.map": "/React_Project_Virtual_Currency/static/js/main.6d66986c.js.map",
+    "453.67827436.chunk.js.map": "/React_Project_Virtual_Currency/static/js/453.67827436.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33c78ec8.css",
+    "static/js/main.6d66986c.js"
+  ]
+}
