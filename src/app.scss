@@ -1,0 +1,33 @@
+.app{
+    .loader{
+        position: fixed;
+        left: 45vw;
+        top: 40vh;
+        bottom: 50vh;
+       width: 100px;
+       height: 100px;
+       border: 5px solid #fff;
+       border-radius: 50%;
+       border-bottom: 5px solid red;
+       animation: spin 1s infinite alternate-reverse;
+
+    }
+
+    tr{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap :10px;
+
+    }
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}

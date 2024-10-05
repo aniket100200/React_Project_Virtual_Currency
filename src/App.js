@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import Navbar from "./components/Navbar";
+import Loader from "./components/Loader";
+import "./app.scss";
 export default function App() {
   const [data,setData]= useState([]);
   const[myData,setMyData]= useState(data);
@@ -31,13 +33,15 @@ export default function App() {
 
 
   return (
-    <div className="bg-black">
+    <div className="bg-black app">
     <Navbar myData={myData} setMyData={setMyData} data={data}/>
-        {
-          myData.map(item =>{
-            return (<Card item={item} />);
-          })
-        }
+          <table style={{width: "100%"}}>
+         { myData && myData.length>0 ?  myData.map(item =>{
+              return (<Card item={item} />);
+            }) :<Loader/>
+            }
+          </table>
+        
     </div>
   )
 }
