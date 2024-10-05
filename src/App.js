@@ -35,7 +35,7 @@ export default function App() {
   return (
     <div className="bg-black app">
     <Navbar myData={myData} setMyData={setMyData} data={data}/>
-          <table style={{width: "100%"}}>
+          <table>
          { myData && myData.length>0 ?  myData.map(item =>{
               return (<Card item={item} />);
             }) :<Loader/>

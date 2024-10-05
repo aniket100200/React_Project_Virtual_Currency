@@ -13,12 +13,20 @@
 
     }
 
-    tr{
-        display: grid;
-        grid-template-columns: repeat(6,1fr);
-        gap :10px;
+   table{
+        tr{
+            display: grid;
+            grid-template-columns: repeat(6,238px);
+            gap: 10px;
 
-    }
+            @media (max-width:900px) {
+                grid-template-columns: repeat(6,200px);
+                gap: 5px;
+            }
+        }
+        overflow: hidden;
+      
+   }
 }
 
 @keyframes spin {
